@@ -1,0 +1,11 @@
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.exe.config
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.exe
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.pdb
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.xml
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Resources.resources
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.exe
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.xml
+C:\Users\ASUS\source\repos\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.pdb
