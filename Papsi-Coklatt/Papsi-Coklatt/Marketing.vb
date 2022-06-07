@@ -30,7 +30,7 @@
     End Sub
     Sub TampilkanData()
         Call koneksiDB()
-        DA = New OleDb.OleDbDataAdapter("select * from Buku ", Conn)
+        DA = New OleDb.OleDbDataAdapter("select * from Marketing ", Conn)
         DS = New DataSet
         DA.Fill(DS)
         DGV.DataSource = DS.Tables(0)
@@ -64,20 +64,20 @@
             Exit Sub
             'Coding ini berfungsi untuk mengecek jika salah satu field data
         Else
+            'Call koneksiDB()
+            ' CMD = New OleDb.OleDbCommand(" select * from Marketing where Id order='" & txtcustomer.Text & "'", Conn)
+            ' DM = CMD.ExecuteReader
+            'DM.Read()
+            ' If Not DM.HasRows Then
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" select * from Customer where Id_Customer='" & txtcustomer.Text & "'", Conn)
-            DM = CMD.ExecuteReader
-            DM.Read()
-            If Not DM.HasRows Then
-                Call koneksiDB()
                 Dim simpan As String
-                simpan = "insert into Produk values ('" & txtcustomer.Text & "', '" & txtalamat.Text & "', '" & txtnotelp.Text & "','" & txttanggalorder.Text & "','" & txtjenisproduk.Text & "','" & txtjumlahproduk.Text & "')"
-                CMD = New OleDb.OleDbCommand(simpan, Conn)
+            simpan = "insert into Marketing values ('" & txtcustomer.Text & "', '" & txtalamat.Text & "', '" & txtnotelp.Text & "','" & txttanggalorder.Value.Date.ToString("yyyy/MM/dd") & "','" & txtjenisproduk.Text & "','" & txtjumlahproduk.Text & "')"
+            CMD = New OleDb.OleDbCommand(simpan, Conn)
                 CMD.ExecuteNonQuery()
                 MsgBox("Input Data Sukses")
-            Else
-                MsgBox("Data Sudah Ada")
-            End If
+            'Else
+            'MsgBox("Data Sudah Ada")
+            'End If
             Call MatikanForm()
             Call KosongkanForm()
             Call TampilkanData()
@@ -104,11 +104,9 @@
             MsgBox("Tidak ada data order yang dipilih")
             Exit Sub
         Else
-            If MessageBox.Show("Are you sure to delete this data ? ",
-"Konfirmasi", MessageBoxButtons.YesNoCancel) = Windows.Forms.DialogResult.Yes Then
+            If MessageBox.Show("Are you sure to delete this data ? ", "Konfirmasi", MessageBoxButtons.YesNoCancel) = Windows.Forms.DialogResult.Yes Then
                 Call koneksiDB()
-                CMD = New OleDb.OleDbCommand(" delete from Customer where
-Nama_Customer ='" & txtcustomer.Text & "'", Conn)
+                CMD = New OleDb.OleDbCommand(" delete from Marketing where Id order ='" & txtcustomer.Text & "'", Conn)
                 DM = CMD.ExecuteReader
                 MsgBox("Hapus Data Berhasil")
                 Call MatikanForm()
