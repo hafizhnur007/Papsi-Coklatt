@@ -64,8 +64,8 @@
         Else
             Call koneksiDB()
             Dim simpan As String
-            simpan = "insert into Produksi values ('" & txtidprod.Text & "', '" & txtjenisprod.Text & "', '" & txtjumlahprod.Text & "','" & txtkapasitas.Text & "','" & txtketerangan.Text & "', '" & txtlineprod.Text & "','" & txtmaterial.Text & "','" & txttargetprod&"')"
-                CMD = New OleDb.OleDbCommand(simpan, Conn)
+            simpan = "insert into Produksi values ('" & txtidprod.Text & "', '" & txtjenisprod.Text & "', '" & txtjumlahprod.Text & "','" & txtkapasitas.Text & "','" & txtketerangan.Text & "', '" & txtlineprod.Text & "','" & txtmaterial.Text & "','" & txttargetprod.Text & "')"
+            CMD = New OleDb.OleDbCommand(simpan, Conn)
             CMD.ExecuteNonQuery()
             MsgBox("Input Data Sukses")
             Call MatikanForm()
@@ -80,7 +80,7 @@
             Exit Sub
         Else
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" update Order set Id Produksi = '" & txtidprod.Text & "', Jenis produksi ='" & txtjenisprod.Text & "',Jumlah produksi = '" & txtjumlahprod.Text & "',Line produksi = '" & txtlineprod.Text & "',Material= '" & txtmaterial.Text & "',Keterangan = '" & txtketerangan.Text & "', Kapasitas = '" & txtkapasitas.Text & "', Target produksi '" & txttargetprod.Text "'", Conn)
+            CMD = New OleDb.OleDbCommand(" update Produksi set Id_Produksi = '" & txtidprod.Text & "', Jenis_produksi ='" & txtjenisprod.Text & "',Jumlah_produksi = '" & txtjumlahprod.Text & "',Line_produksi = '" & txtlineprod.Text & "',Material= '" & txtmaterial.Text & "',Keterangan = '" & txtketerangan.Text & "', Kapasitas = '" & txtkapasitas.Text & "', Target_produksi '" & txttargetprod.Text, Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
         End If
@@ -95,8 +95,7 @@
             Exit Sub
         Else
             If MessageBox.Show("Are you sure to delete this data ? ", "Konfirmasi", MessageBoxButtons.YesNoCancel) = Windows.Forms.DialogResult.Yes Then
-                Call koneksiDB()
-                CMD = New OleDb.OleDbCommand(" delete from Marketing where Id Produksi ='" & txtidprod.Text & "'", Conn)
+                CMD = New OleDb.OleDbCommand(" delete from Produksi where Id_Produksi ='" & txtidprod.Text & "'", Conn)
                 DM = CMD.ExecuteReader
                 MsgBox("Hapus Data Berhasil")
                 Call MatikanForm()
@@ -107,10 +106,5 @@
                 Call TampilkanData()
             End If
         End If
-    End Sub
-
-    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
-        Form3.Open()
-        Me.Close()
     End Sub
 End Class

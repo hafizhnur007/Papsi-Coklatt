@@ -35,5 +35,5 @@ C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Deb
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Marketing.resources
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Planning.resources
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form3.resources
-C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Produksi.resources
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form4.resources
+C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Warehouse.resources

@@ -89,8 +89,7 @@
             MsgBox("Data Order Belum Lengkap")
             Exit Sub
         Else
-            Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" update Order set Nama_Customer = '" & txtcustomer.Text & "', Alamat ='" & txtalamat.Text & "',No_Telp = '" & txtnotelp.Text & "',Tanggal_Order = '" & txttanggalorder.Text & "',Jenis_Produk= '" & txtjenisproduk.Text & "',Jumlah_Produk = '" & txtjumlahproduk.Text, Conn)
+            CMD = New OleDb.OleDbCommand(" update Marketing set Id_order = '" & txtcustomer.Text & "', Alamat ='" & txtalamat.Text & "',No_Telp = '" & txtnotelp.Text & "',Tanggal_Order = '" & txttanggalorder.Text & "',Jenis_Produk= '" & txtjenisproduk.Text & "',Jumlah_Produk = '" & txtjumlahproduk.Text, Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
         End If

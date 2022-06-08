@@ -46,11 +46,11 @@ Partial Class Form4
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGV = New System.Windows.Forms.DataGridView()
         Me.btnnext = New System.Windows.Forms.Button()
         Me.btnback = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btninput
@@ -270,15 +270,15 @@ Partial Class Form4
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Id Produksi"
         '
-        'DataGridView1
+        'DGV
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(379, 78)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(409, 279)
-        Me.DataGridView1.TabIndex = 16
+        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV.Location = New System.Drawing.Point(379, 78)
+        Me.DGV.Name = "DGV"
+        Me.DGV.RowHeadersWidth = 51
+        Me.DGV.RowTemplate.Height = 24
+        Me.DGV.Size = New System.Drawing.Size(409, 279)
+        Me.DGV.TabIndex = 16
         '
         'btnnext
         '
@@ -305,7 +305,7 @@ Partial Class Form4
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.btnnext)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGV)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btndelete)
@@ -318,7 +318,7 @@ Partial Class Form4
         Me.Text = "Form4"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -348,7 +348,7 @@ Partial Class Form4
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGV As DataGridView
     Friend WithEvents btnnext As Button
     Friend WithEvents btnback As Button
 End Class
