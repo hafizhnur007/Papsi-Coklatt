@@ -138,4 +138,8 @@ cbjp.Text & "',Line_Produksi = '" & cblp.Text & "' where ID_Planning
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
     End Sub
+
+    Private Sub Planning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
