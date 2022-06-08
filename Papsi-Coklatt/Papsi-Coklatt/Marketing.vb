@@ -106,7 +106,7 @@
         Else
             If MessageBox.Show("Are you sure to delete this data ? ", "Konfirmasi", MessageBoxButtons.YesNoCancel) = Windows.Forms.DialogResult.Yes Then
                 Call koneksiDB()
-                CMD = New OleDb.OleDbCommand(" delete from Marketing where Id order ='" & txtcustomer.Text & "'", Conn)
+                CMD = New OleDb.OleDbCommand(" delete from Marketing where Id_order ='" & txtcustomer.Text & "'", Conn)
                 DM = CMD.ExecuteReader
                 MsgBox("Hapus Data Berhasil")
                 Call MatikanForm()

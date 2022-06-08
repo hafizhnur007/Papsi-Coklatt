@@ -14,7 +14,6 @@ C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\bin\Deb
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.pdb
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\bin\Debug\Papsi-Coklatt.xml
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbproj.AssemblyReference.cache
-C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form2.resources
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Resources.resources
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbproj.GenerateResource.cache
 C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.vbproj.CoreCompileInputs.cache
@@ -33,3 +32,4 @@ C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Deb
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.exe
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.xml
 C:\Users\ASUS\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.pdb
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Marketing.resources
