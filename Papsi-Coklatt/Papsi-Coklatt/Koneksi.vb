@@ -22,4 +22,11 @@ Module Koneksi
         DGV.DataSource = DS.Tables(0)
         DGV.ReadOnly = True
     End Sub
+    Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As String
+        ' by making Generator static, we preserve the same instance '
+        ' (i.e., do not create new instances with the same seed over and over) '
+        ' between calls '
+        Static Generator As System.Random = New System.Random()
+        Return Generator.Next(Min, Max).ToString
+    End Function
 End Module

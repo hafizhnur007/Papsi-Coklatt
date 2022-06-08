@@ -131,4 +131,11 @@ cbjp.Text & "',Line_Produksi = '" & cblp.Text & "' where ID_Planning
         'mengedit kode buku nya , kita hanya bisa mengedit di field2 lainnya
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
 End Class
