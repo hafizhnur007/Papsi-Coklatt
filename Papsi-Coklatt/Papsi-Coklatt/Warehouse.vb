@@ -29,7 +29,7 @@
     End Sub
     Sub TampilkanData()
         Call koneksiDB()
-        DA = New OleDb.OleDbDataAdapter("select * from Warehouse ", Conn)
+        DA = New OleDb.OleDbDataAdapter("select * from Warehouse Material ", Conn)
         DS = New DataSet
         DA.Fill(DS)
         DataGridView1.DataSource = DS.Tables(0)
@@ -57,7 +57,7 @@
             'Coding ini berfungsi untuk mengecek jika salah satu field data
         Else
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" select * from Warehouse where id FG ='" & TextBox1.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand(" select * from Warehouse Material where id FG ='" & TextBox1.Text & "'", Conn)
             DM = CMD.ExecuteReader
             DM.Read()
             'Coding ini berfungsi untuk mengecek jika di bagian kode buku
