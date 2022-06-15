@@ -107,4 +107,12 @@
             End If
         End If
     End Sub
+
+    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
+        Planning.Show()
+    End Sub
+
+    Private Sub btnnext_Click(sender As Object, e As EventArgs) Handles btnnext.Click
+        Warehouse.Show()
+    End Sub
 End Class

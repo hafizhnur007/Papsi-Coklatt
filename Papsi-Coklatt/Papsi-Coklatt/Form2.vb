@@ -6,9 +6,12 @@
         txtjp.Text = ""
         txtidrm.Text = ""
         txtjrm.Text = ""
+
         txtidp.Focus()
         'Coding diatas ada untuk mengosongkan Form yang sudah kita buat ,
     End Sub
+
+
     Sub HidupkanForm()
         txtidp.Enabled = True
         txtsrm.Enabled = True
@@ -43,6 +46,11 @@
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Call HidupkanForm()
         Call KosongkanForm()
+        Call HidupkanForm()
+        Call KosongkanForm()
+        Dim urutankode As String
+        urutankode = "IDP" + GetRandom(1, 999)
+        txtidp.Text = urutankode
         ' Fungsi coding sama dengan diatas
     End Sub
 
@@ -96,13 +104,13 @@ cblp.Text & "')"
             'Coding berfungsi untuk mengecek jika ada field yang belum terisi
         Else
             Call koneksiDB()
- CMD = New OleDb.OleDbCommand(" update Input set ID_Customer = '" &
-txtidc.Text & "', Stock ='" & txtsrm.Text & "',Jumlah_Produksi = '" &
-txtjp.Text & "',ID_RM = '" & txtidrm.Text & "',Jumlah_RM_Terpakai= '" & txtjrm.Text & "',Jenis_Produk = '" &
-cbjp.Text & "',Line_Produksi = '" & cblp.Text & "' where ID_Planning
+            CMD = New OleDb.OleDbCommand(" update Input set ID_Customer = '" &
+           txtidc.Text & "', Stock ='" & txtsrm.Text & "',Jumlah_Produksi = '" &
+           txtjp.Text & "',ID_RM = '" & txtidrm.Text & "',Jumlah_RM_Terpakai= '" & txtjrm.Text & "',Jenis_Produk = '" &
+           cbjp.Text & "',Line_Produksi = '" & cblp.Text & "' where ID_Planning
 ='" & txtidp.Text & "'", Conn)
- DM = CMD.ExecuteReader
- MsgBox("Update Data Berhasil")
+            DM = CMD.ExecuteReader
+            MsgBox("Update Data Berhasil")
             'Coding berfungsi untuk mengedit dan mengupdate data yang dipilih
             'untuk kemudian disimpan lagi di tabel Ms.Access yang sdh dibuat
         End If
@@ -132,14 +140,12 @@ cbjp.Text & "',Line_Produksi = '" & cblp.Text & "' where ID_Planning
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Form3.Show()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+        Form4.Show()
     End Sub
 
-    Private Sub Planning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class
