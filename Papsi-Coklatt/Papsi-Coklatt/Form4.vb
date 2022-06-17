@@ -13,25 +13,25 @@
 
     End Sub
     Sub MatikanForm()
-        txtidprod.Text = False
-        txtjenisprod.Text = False
-        txtjumlahprod.Text = False
-        txtkapasitas.Text = False
-        txtketerangan.Text = False
-        txtlineprod.Text = False
-        txtmaterial.Text = False
-        txttargetprod.Text = False
+        txtidprod.Enabled = False
+        txtjenisprod.Enabled = False
+        txtjumlahprod.Enabled = False
+        txtkapasitas.Enabled = False
+        txtketerangan.Enabled = False
+        txtlineprod.Enabled = False
+        txtmaterial.Enabled = False
+        txttargetprod.Enabled = False
         'Coding diatas untuk menutup atau mematikan form agar tidak dapat isi
     End Sub
     Sub HidupkanForm()
-        txtidprod.Text = True
-        txtjenisprod.Text = True
-        txtjumlahprod.Text = True
-        txtkapasitas.Text = True
-        txtketerangan.Text = True
-        txtlineprod.Text = True
-        txtmaterial.Text = True
-        txttargetprod.Text = True
+        txtidprod.Enabled = True
+        txtjenisprod.Enabled = True
+        txtjumlahprod.Enabled = True
+        txtkapasitas.Enabled = True
+        txtketerangan.Enabled = True
+        txtlineprod.Enabled = True
+        txtmaterial.Enabled = True
+        txttargetprod.Enabled = True
         'Coding diatas untuk mulai menghidupkan form agar form bisa diisi
     End Sub
     Sub TampilkanData()
@@ -79,7 +79,7 @@
             MsgBox("Data Order Belum Lengkap")
             Exit Sub
         Else
-            Call koneksiDB()
+            'Call koneksiDB()
             CMD = New OleDb.OleDbCommand(" update Produksi set Id_Produksi = '" & txtidprod.Text & "', Jenis_produksi ='" & txtjenisprod.Text & "',Jumlah_produksi = '" & txtjumlahprod.Text & "',Line_produksi = '" & txtlineprod.Text & "',Material= '" & txtmaterial.Text & "',Keterangan = '" & txtketerangan.Text & "', Kapasitas = '" & txtkapasitas.Text & "', Target_produksi '" & txttargetprod.Text, Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
