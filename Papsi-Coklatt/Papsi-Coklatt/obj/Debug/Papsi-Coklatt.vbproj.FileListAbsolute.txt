@@ -53,3 +53,8 @@ C:\Users\Indra\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\De
 C:\Users\Indra\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.exe
 C:\Users\Indra\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.xml
 C:\Users\Indra\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi-Coklatt.pdb
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form1.resources
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Planning.resources
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form3.resources
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Form4.resources
+C:\Users\ACER\Documents\GitHub\Papsi-Coklatt\Papsi-Coklatt\Papsi-Coklatt\obj\Debug\Papsi_Coklatt.Warehouse.resources
