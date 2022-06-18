@@ -39,8 +39,12 @@
         DA = New OleDb.OleDbDataAdapter("select * from Produksi ", Conn)
         DS = New DataSet
         DA.Fill(DS)
-        DGV.DataSource = DS.Tables(0)
-        DGV.ReadOnly = True
+        DGV4.DataSource = DS.Tables(0)
+        DGV4.ReadOnly = True
+    End Sub
+    Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Call MatikanForm()
+        Call TampilkanData()
     End Sub
     Private Sub btninput_Click(sender As Object, e As EventArgs) Handles btninput.Click
         Call HidupkanForm()
@@ -80,7 +84,10 @@
             Exit Sub
         Else
             'Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" update Produksi set Id_Produksi = '" & txtidprod.Text & "', Jenis_produksi ='" & txtjenisprod.Text & "',Jumlah_produksi = '" & txtjumlahprod.Text & "',Line_produksi = '" & txtlineprod.Text & "',Material= '" & txtmaterial.Text & "',Keterangan = '" & txtketerangan.Text & "', Kapasitas = '" & txtkapasitas.Text & "', Target_produksi '" & txttargetprod.Text, Conn)
+            CMD = New OleDb.OleDbCommand(" update Produksi set Jenis_produksi ='" & txtjenisprod.Text & "',Jumlah_produksi = '" & txtjumlahprod.Text &
+                                         "',Line_produksi = '" & txtlineprod.Text & "',Material= '" & txtmaterial.Text &
+                                         "',Keterangan = '" & txtketerangan.Text & "', Kapasitas = '" & txtkapasitas.Text &
+                                         "', Target_produksi '" & txttargetprod.Text & "' where Id_produksi ='" & txtidprod.Text & "'", Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
         End If
@@ -114,5 +121,18 @@
 
     Private Sub btnnext_Click(sender As Object, e As EventArgs) Handles btnnext.Click
         Warehouse.Show()
+    End Sub
+    Private Sub DGV_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DGV4.CellMouseClick
+        On Error Resume Next
+        txtidprod.Text = DGV4.Rows(e.RowIndex).Cells(0).Value
+        txtjenisprod.Text = DGV4.Rows(e.RowIndex).Cells(1).Value
+        txtjumlahprod.Text = DGV4.Rows(e.RowIndex).Cells(2).Value
+        txtkapasitas.Text = DGV4.Rows(e.RowIndex).Cells(3).Value
+        txtketerangan.Text = DGV4.Rows(e.RowIndex).Cells(4).Value
+        txtlineprod.Text = DGV4.Rows(e.RowIndex).Cells(5).Value
+        txtmaterial.Text = DGV4.Rows(e.RowIndex).Cells(6).Value
+        txttargetprod.Text = DGV4.Rows(e.RowIndex).Cells(7).Value
+        Call HidupkanForm()
+        txtidprod.Enabled = False
     End Sub
 End Class

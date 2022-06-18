@@ -48,9 +48,9 @@ Partial Class Form4
         Me.Label17 = New System.Windows.Forms.Label()
         Me.btnnext = New System.Windows.Forms.Button()
         Me.btnback = New System.Windows.Forms.Button()
-        Me.DGV = New System.Windows.Forms.DataGridView()
+        Me.DGV4 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btninput
@@ -306,23 +306,23 @@ Partial Class Form4
         Me.btnback.Text = "Back To Planning"
         Me.btnback.UseVisualStyleBackColor = True
         '
-        'DGV
+        'DGV4
         '
-        Me.DGV.BackgroundColor = System.Drawing.Color.AliceBlue
-        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV.Location = New System.Drawing.Point(383, 92)
-        Me.DGV.Name = "DGV"
-        Me.DGV.RowHeadersWidth = 51
-        Me.DGV.RowTemplate.Height = 24
-        Me.DGV.Size = New System.Drawing.Size(405, 264)
-        Me.DGV.TabIndex = 19
+        Me.DGV4.BackgroundColor = System.Drawing.Color.AliceBlue
+        Me.DGV4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV4.Location = New System.Drawing.Point(383, 92)
+        Me.DGV4.Name = "DGV4"
+        Me.DGV4.RowHeadersWidth = 51
+        Me.DGV4.RowTemplate.Height = 24
+        Me.DGV4.Size = New System.Drawing.Size(405, 264)
+        Me.DGV4.TabIndex = 19
         '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.DGV)
+        Me.Controls.Add(Me.DGV4)
         Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.btnnext)
         Me.Controls.Add(Me.GroupBox2)
@@ -338,7 +338,7 @@ Partial Class Form4
         Me.Text = "Form4"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -370,5 +370,5 @@ Partial Class Form4
     Friend WithEvents Label17 As Label
     Friend WithEvents btnnext As Button
     Friend WithEvents btnback As Button
-    Friend WithEvents DGV As DataGridView
+    Friend WithEvents DGV4 As DataGridView
 End Class
