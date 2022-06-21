@@ -33,9 +33,10 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button1.Location = New System.Drawing.Point(53, 44)
+        Me.Button1.Location = New System.Drawing.Point(47, 35)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(210, 78)
+        Me.Button1.Size = New System.Drawing.Size(187, 62)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Marketing"
         Me.Button1.UseVisualStyleBackColor = False
@@ -43,9 +44,11 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.Desktop
-        Me.Button2.Location = New System.Drawing.Point(224, 166)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button2.Location = New System.Drawing.Point(199, 133)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 78)
+        Me.Button2.Size = New System.Drawing.Size(187, 62)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Planning"
         Me.Button2.UseVisualStyleBackColor = False
@@ -53,9 +56,10 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Info
-        Me.Button3.Location = New System.Drawing.Point(53, 284)
+        Me.Button3.Location = New System.Drawing.Point(47, 227)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(210, 78)
+        Me.Button3.Size = New System.Drawing.Size(187, 62)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Warehouse"
         Me.Button3.UseVisualStyleBackColor = False
@@ -63,9 +67,10 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.Button4.Location = New System.Drawing.Point(381, 284)
+        Me.Button4.Location = New System.Drawing.Point(339, 227)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(210, 78)
+        Me.Button4.Size = New System.Drawing.Size(187, 62)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Purchasing"
         Me.Button4.UseVisualStyleBackColor = False
@@ -73,24 +78,26 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Button5.Location = New System.Drawing.Point(381, 54)
+        Me.Button5.Location = New System.Drawing.Point(339, 43)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(210, 78)
+        Me.Button5.Size = New System.Drawing.Size(187, 62)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "Produksi"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(639, 413)
+        Me.ClientSize = New System.Drawing.Size(568, 330)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
