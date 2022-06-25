@@ -51,13 +51,17 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -80,41 +84,101 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.vb" />
-    <Compile Include="CrystalReport1.vb">
+    <Compile Include="laporanmarketing.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <DependentUpon>laporanmarketing.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CrystalReport2.vb">
+    <Compile Include="laporanplanning.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <DependentUpon>laporanplanning.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="laporanproduksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanproduksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanpurchasing.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanpurchasing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanwarehouseawal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanwarehouseawal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanwarehousefg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanwarehousefg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lprnmarketing.Designer.vb">
+      <DependentUpon>lprnmarketing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lprnmarketing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="lprnplanning.Designer.vb">
+      <DependentUpon>lprnplanning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lprnplanning.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="lprnproduksi.Designer.vb">
+      <DependentUpon>lprnproduksi.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="lprnproduksi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="lprnpurchasing.Designer.vb">
+      <DependentUpon>lprnpurchasing.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="lprnpurchasing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="lprnwarehousefg.Designer.vb">
+      <DependentUpon>lprnwarehousefg.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="lprnwarehousefg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lprnwarehousematerial.Designer.vb">
+      <DependentUpon>lprnwarehousematerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lprnwarehousematerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama.Designer.vb">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning.Designer.vb">
+      <DependentUpon>Planning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing.Designer.vb">
+      <DependentUpon>Purchasing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produksi.Designer.vb">
+      <DependentUpon>Produksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produksi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Marketing.Designer.vb">
@@ -149,25 +213,59 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CrystalReport1.rpt">
+    <EmbeddedResource Include="laporanmarketing.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+      <LastGenOutput>laporanmarketing.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport2.rpt">
+    <EmbeddedResource Include="laporanplanning.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+      <LastGenOutput>laporanplanning.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="laporanproduksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanproduksi.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="laporanpurchasing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanpurchasing.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="laporanwarehouseawal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanwarehouseawal.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="laporanwarehousefg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanwarehousefg.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnmarketing.resx">
+      <DependentUpon>lprnmarketing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnplanning.resx">
+      <DependentUpon>lprnplanning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnproduksi.resx">
+      <DependentUpon>lprnproduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnpurchasing.resx">
+      <DependentUpon>lprnpurchasing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnwarehousefg.resx">
+      <DependentUpon>lprnwarehousefg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lprnwarehousematerial.resx">
+      <DependentUpon>lprnwarehousematerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUtama.resx">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning.resx">
+      <DependentUpon>Planning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing.resx">
+      <DependentUpon>Purchasing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produksi.resx">
+      <DependentUpon>Produksi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Marketing.resx">
       <DependentUpon>Marketing.vb</DependentUpon>

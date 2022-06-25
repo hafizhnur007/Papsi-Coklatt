@@ -46,6 +46,9 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Call HidupkanForm()
         Call KosongkanForm()
+        Dim urutankode As String
+        urutankode = "IDC" + GetRandom(1, 999)
+        txtcustomer.Text = urutankode
         ' Fungsi coding sama dengan diatas
     End Sub
 
@@ -129,5 +132,9 @@
         Call HidupkanForm()
         txtcustomer.Enabled = False 'Ketika mengedit , kita tidak bisa
 
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Planning.Show()
     End Sub
 End Class
